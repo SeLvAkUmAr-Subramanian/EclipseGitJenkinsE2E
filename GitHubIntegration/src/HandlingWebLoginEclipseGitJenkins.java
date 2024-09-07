@@ -24,6 +24,8 @@ public class HandlingWebLoginEclipseGitJenkins {
 		password.sendKeys("test");
 //		password.sendKeys(passwordValue);
 		
+		System.out.println(driver.getTitle());
+		
 		WebElement loginButton = driver.findElement(By.xpath("//*[@id='ctl00_MainContent_login_button']"));
 		loginButton.click();
 }
