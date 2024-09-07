@@ -16,11 +16,13 @@ public class HandlingWebLoginEclipseGitJenkins {
 		
 		WebElement userName = driver.findElement(By.xpath("//*[@id='ctl00_MainContent_username']"));
 		String userNameValue = input.nextLine() ;
-		userName.sendKeys(userNameValue);
+		userName.sendKeys("Tester");
+//		userName.sendKeys(userNameValue);
 		
 		WebElement password = driver.findElement(By.xpath("//*[@id='ctl00_MainContent_password']"));
 		String passwordValue = input.nextLine();
-		password.sendKeys(passwordValue);
+		password.sendKeys("test");
+//		password.sendKeys(passwordValue);
 		
 		WebElement loginButton = driver.findElement(By.xpath("//*[@id='ctl00_MainContent_login_button']"));
 		loginButton.click();
